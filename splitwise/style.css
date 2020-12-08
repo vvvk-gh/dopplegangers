@@ -99,6 +99,139 @@ ul li {
 
 #s1 {
   width: 100%;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  padding: 10%;
+  /* display: flex; */
+}
+
+#s1 #hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#s1 #hero-left #hero-heading {
+  margin-bottom: 20px;
+  font-size: 38px;
+  max-width: 350px;
+  color: rgb(58, 62, 66);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#s1 #hero-left p {
+  margin: 20px 0px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-align: start;
+  max-width: 340px;
+}
+
+#s1 #hero-left #signUpButton {
+  margin-bottom: 10px;
+  background-color: rgb(28, 194, 159);
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  border-radius: 3px;
+  color: #fff;
+  height: 50px;
+  width: 180px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#s1 #hero-left #small {
+  color: rgb(58, 62, 66);
+  font-size: 10pt;
+  font-family: 'Lato', sans-serif;
+}
+
+#s1 #hero-left ul {
+  padding: 0.5rem, 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#s1 #hero-left ul li {
+  padding: 10px;
+}
+
+#s1 #hero-left .svg {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background: black;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+#s1 #hero-left #plane {
+  mask-image: url(./assests/svg/plane.svg);
+  background: rgba(37, 195, 162, 0.4);
+  transition: 0.4s;
+}
+#s1 #hero-left #house {
+  mask-image: url(./assests/svg/house.svg);
+  background: rgba(138, 93, 206, 0.4);
+  transition: 0.4s;
+}
+#s1 #hero-left #heart {
+  mask-image: url(./assests/svg/heart.svg);
+  background: rgba(166, 0, 47, 0.4);
+  transition: 0.4s;
+}
+
+#s1 #hero-left #star {
+  mask-image: url(./assests/svg/star.svg);
+  background: rgba(58, 62, 66, 0.4);
+}
+
+#s1 #hero-left #plane:hover {
+  mask-image: url(./assests/svg/plane.svg);
+  background: rgba(37, 195, 162);
+}
+#s1 #hero-left #house:hover {
+  mask-image: url(./assests/svg/house.svg);
+  background: rgba(138, 93, 206);
+}
+#s1 #hero-left #heart:hover {
+  mask-image: url(./assests/svg/heart.svg);
+  background: rgba(166, 0, 47);
+}
+
+#s1 #hero-left #star:hover {
+  mask-image: url(./assests/svg/star.svg);
+  background: rgba(58, 62, 66);
+}
+
+#s1 #hero-right {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#s1 #hero-right #svg {
+  min-height: 500px;
+  min-width: 500px;
+  /* display: inline-block; */
+  background: black;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-image: url(./assests/svg/house.svg);
+  transition: 0.4s;
 }
 
 #s2 {
