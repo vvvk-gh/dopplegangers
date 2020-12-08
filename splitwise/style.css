@@ -74,7 +74,7 @@ ul li {
   padding-top: 120px;
   width: 50%;
   height: 100vh;
-  background-image: url(./assests/bg1.png);
+  background-image: url(/assests/bg1.png);
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -177,41 +177,41 @@ ul li {
 }
 
 #s1 #hero-left #plane {
-  mask-image: url(./assests/svg/plane.svg);
+  mask-image: url(/assests/svg/plane.svg);
   background: rgba(37, 195, 162, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #house {
-  mask-image: url(./assests/svg/house.svg);
+  mask-image: url(/assests/svg/house.svg);
   background: rgba(138, 93, 206, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #heart {
-  mask-image: url(./assests/svg/heart.svg);
+  mask-image: url(/assests/svg/heart.svg);
   background: rgba(166, 0, 47, 0.4);
   transition: 0.4s;
 }
 
 #s1 #hero-left #star {
-  mask-image: url(./assests/svg/star.svg);
+  mask-image: url(/assests/svg/star.svg);
   background: rgba(58, 62, 66, 0.4);
 }
 
 #s1 #hero-left #plane:hover {
-  mask-image: url(./assests/svg/plane.svg);
+  mask-image: url(/assests/svg/plane.svg);
   background: rgba(37, 195, 162);
 }
 #s1 #hero-left #house:hover {
-  mask-image: url(./assests/svg/house.svg);
+  mask-image: url(/assests/svg/house.svg);
   background: rgba(138, 93, 206);
 }
 #s1 #hero-left #heart:hover {
-  mask-image: url(./assests/svg/heart.svg);
+  mask-image: url(/assests/svg/heart.svg);
   background: rgba(166, 0, 47);
 }
 
 #s1 #hero-left #star:hover {
-  mask-image: url(./assests/svg/star.svg);
+  mask-image: url(/assests/svg/star.svg);
   background: rgba(58, 62, 66);
 }
 
