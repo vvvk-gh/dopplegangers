@@ -172,47 +172,49 @@ ul li {
   height: 45px;
   display: inline-block;
   background: black;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
   mask-size: cover;
   mask-repeat: no-repeat;
 }
 
 #s1 #hero-left #plane {
-  mask-image: url(/assests/svg/plane.svg);
+  mask-image: url(./assests/svg/plane.svg);
   background: rgba(37, 195, 162, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #house {
-  mask-image: url(/assests/svg/house.svg);
+  mask-image: url(./assests/svg/house.svg);
   background: rgba(138, 93, 206, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #heart {
-  mask-image: url(/assests/svg/heart.svg);
+  mask-image: url(./assests/svg/heart.svg);
   background: rgba(166, 0, 47, 0.4);
   transition: 0.4s;
 }
 
 #s1 #hero-left #star {
-  mask-image: url(/assests/svg/star.svg);
+  mask-image: url(./assests/svg/star.svg);
   background: rgba(58, 62, 66, 0.4);
 }
 
 #s1 #hero-left #plane:hover {
-  mask-image: url(/assests/svg/plane.svg);
-  background: rgba(37, 195, 162);
+  mask-image: url(./assests/svg/plane.svg);
+  background: rgb(37, 195, 162);
 }
 #s1 #hero-left #house:hover {
-  mask-image: url(/assests/svg/house.svg);
-  background: rgba(138, 93, 206);
+  mask-image: url(./assests/svg/house.svg);
+  background: rgb(138, 93, 206);
 }
 #s1 #hero-left #heart:hover {
-  mask-image: url(/assests/svg/heart.svg);
-  background: rgba(166, 0, 47);
+  mask-image: url(./assests/svg/heart.svg);
+  background: rgb(166, 0, 47);
 }
 
 #s1 #hero-left #star:hover {
-  mask-image: url(/assests/svg/star.svg);
-  background: rgba(58, 62, 66);
+  mask-image: url(./assests/svg/star.svg);
+  background: rgb(58, 62, 66);
 }
 
 #s1 #hero-right {
@@ -226,12 +228,87 @@ ul li {
 #s1 #hero-right #svg {
   min-height: 500px;
   min-width: 500px;
-  /* display: inline-block; */
-  background: black;
+  display: inline-block;
+  background: rgb(37, 195, 162);
   mask-size: cover;
   mask-repeat: no-repeat;
-  mask-image: url(./assests/svg/house.svg);
   transition: 0.4s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* large plane */
+
+.s-p28,
+.s-p1 {
+  fill: rgb(5, 139, 110);
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+.s-p0,
+.s-p3 {
+  fill: rgb(54, 80, 54);
+}
+
+/* large house */
+.s-h9,
+.s-h6,
+.s-h8 {
+  fill: #8a5dce;
+}
+.s-h5,
+.s-h7 {
+  fill: #351a5e;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+/* large star */
+
+.s-a19,
+.s-a20,
+.s-a22 {
+  fill: darkgrey;
+}
+.s-a17,
+.s-a22,
+.s-a25,
+.s-a116,
+.s-a113 {
+  fill: black;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.s-a114 {
+  fill: darkgray;
+}
+
+/* large heart */
+.s-ht10 {
+  fill: #a6002f;
+}
+
+.s-ht11,
+.s-ht12,
+.s-ht15,
+.s-ht16 {
+  fill: rgb(194, 98, 98);
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.s-ht13,
+.s-ht14 {
+  fill: rgb(58, 3, 3);
 }
 
 #s2 {
@@ -299,4 +376,13 @@ ul li {
 .image-container img {
   max-width: 500px;
   max-height: 500px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
