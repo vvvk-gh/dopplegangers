@@ -74,7 +74,7 @@ ul li {
   padding-top: 120px;
   width: 50%;
   height: 100vh;
-  background-image: url(/assests/bg1.png);
+  background-image: url(./assests/bg1.png);
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -376,6 +376,188 @@ ul li {
 .image-container img {
   max-width: 500px;
   max-height: 500px;
+}
+
+#s7 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+#s7 .testimonal-card {
+  padding: 10px;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0px solid #e6e8ee;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 0 rgba(55, 59, 63, 0.5);
+  border-width: 1px;
+  cursor: pointer;
+  transition: 0s;
+}
+
+#s7 .testimonal-card:hover {
+  box-shadow: none;
+  /* border: 0px solid #e6e8ee; */
+}
+
+#s7 .testimonal-card .testimonal-body p {
+  display: block;
+  width: 100%;
+  text-align: start;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+.testimonal-user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
+#s7 .testimonal-card .testimonal-user p {
+  padding: 10px;
+  text-align: start;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+#s7 .testimonal-card .testimonal-user img {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+#s8 {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  cursor: pointer;
+}
+
+#s8 .lists {
+  width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+#s8 ul {
+  padding: 1rem;
+  display: block;
+}
+
+#s8 ul li {
+  font-family: 'Lato';
+  color: #52595f;
+  line-height: 1.5;
+}
+
+#s8 ul hr {
+  color: #52595f;
+}
+
+#s8 ul li:nth-child(1) {
+  font-weight: bold;
+}
+
+#s8 ul:nth-child(1) li:nth-child(1) {
+  color: #1cc29f;
+}
+#s8 ul:nth-child(3) li:nth-child(1) {
+  color: #f67240;
+}
+#s8 ul:nth-child(5) li:nth-child(1) {
+  color: black;
+}
+
+#s8 .download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#s8 .download p {
+  font-family: 'Lato';
+  font-size: 0.8rem;
+  color: #52595f;
+}
+
+#s9 {
+  padding: 0px;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  cursor: pointer;
+}
+
+#s9 .lists {
+  width: 100%;
+  display: flex;
+  color: #37353f;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: ; */
+}
+#s9 ul {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0rem;
+}
+
+#s9 ul li {
+  list-style: url(./assests/svg/core.svg);
+  font-family: 'Lato';
+  color: #52595f;
+  line-height: 2;
+}
+
+#s9 .lists #pro li {
+  list-style: url(./assests/svg/pro.svg);
+  font-family: 'Lato';
+  color: #52595f;
+  line-height: 2;
+}
+
+#s9 .text-center {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(58, 62, 66);
+  font-size: 2.5rem;
+}
+
+#features {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  color: #37353f;
+  justify-content: center;
+  align-items: baseline;
+}
+#features div {
+  width: auto;
+  margin: 0.5rem;
 }
 
 @keyframes blink {
