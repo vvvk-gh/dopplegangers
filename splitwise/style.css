@@ -99,12 +99,14 @@ ul li {
 
 #s1 {
   width: 100%;
+  height: 100vh;
   display: block;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: row;
+  align-items: space-between;
+  justify-content: space-around;
   padding: 10%;
-  /* display: flex; */
 }
 
 #s1 #hero-left {
@@ -114,8 +116,6 @@ ul li {
   justify-content: center;
   width: 50%;
   height: 100vh;
-  margin-top: 40px;
-  margin-bottom: 10px;
 }
 
 #s1 #hero-left #hero-heading {
@@ -179,63 +179,67 @@ ul li {
 }
 
 #s1 #hero-left #plane {
+  -webkit-mask-image: url(./assests/svg/plane.svg);
   mask-image: url(./assests/svg/plane.svg);
   background: rgba(37, 195, 162, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #house {
+  -webkit-mask-image: url(./assests/svg/house.svg);
   mask-image: url(./assests/svg/house.svg);
   background: rgba(138, 93, 206, 0.4);
   transition: 0.4s;
 }
 #s1 #hero-left #heart {
+  -webkit-mask-image: url(./assests/svg/heart.svg);
   mask-image: url(./assests/svg/heart.svg);
   background: rgba(166, 0, 47, 0.4);
   transition: 0.4s;
 }
 
 #s1 #hero-left #star {
+  -webkit-mask-image: url(./assests/svg/star.svg);
   mask-image: url(./assests/svg/star.svg);
   background: rgba(58, 62, 66, 0.4);
 }
 
 #s1 #hero-left #plane:hover {
+  -webkit-mask-image: url(./assests/svg/plane.svg);
   mask-image: url(./assests/svg/plane.svg);
   background: rgb(37, 195, 162);
 }
 #s1 #hero-left #house:hover {
+  -webkit-mask-image: url(./assests/svg/house.svg);
   mask-image: url(./assests/svg/house.svg);
   background: rgb(138, 93, 206);
 }
 #s1 #hero-left #heart:hover {
+  -webkit-mask-image: url(./assests/svg/heart.svg);
   mask-image: url(./assests/svg/heart.svg);
   background: rgb(166, 0, 47);
 }
 
 #s1 #hero-left #star:hover {
+  -webkit-mask-image: url(./assests/svg/star.svg);
   mask-image: url(./assests/svg/star.svg);
   background: rgb(58, 62, 66);
 }
 
 #s1 #hero-right {
+  height: 100vh;
   width: 50%;
-  height: 90vh;
-  display: flex;
+}
+
+#s1 #hero-right #svgLists {
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  /* display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
-#s1 #hero-right #svg {
-  min-height: 500px;
-  min-width: 500px;
-  display: inline-block;
-  background: rgb(37, 195, 162);
-  mask-size: cover;
-  mask-repeat: no-repeat;
-  transition: 0.4s;
-}
-
-.hidden {
+#s1 #hero-right .hidden {
   display: none;
 }
 
@@ -385,7 +389,7 @@ ul li {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #fff;
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -394,10 +398,10 @@ ul li {
 #s7 .testimonal-card {
   padding: 10px;
   display: flex;
-  width: 400px;
+  width: 300px;
   height: 200px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   border: 0px solid #e6e8ee;
   border-radius: 5px;
   box-shadow: 0 2px 0 0 rgba(55, 59, 63, 0.5);
@@ -521,7 +525,6 @@ ul li {
   color: #37353f;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: ; */
 }
 #s9 ul {
   display: block;
@@ -569,4 +572,225 @@ ul li {
   100% {
     opacity: 1;
   }
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  #s1 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #s1 #hero-left {
+    width: 100%;
+    height: auto;
+  }
+
+  #s1 #hero-left #hero-heading {
+    margin: 0 auto;
+    font-size: 25px;
+    max-width: 100%;
+    color: rgb(58, 62, 66);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #s1 #hero-left p {
+    display: none;
+  }
+
+  #s1 #hero-left #signUpButton {
+    display: none;
+  }
+
+  #s1 #hero-left #small {
+    display: none;
+  }
+
+  #s1 #hero-left ul {
+    margin: 0 auto;
+  }
+
+  #s1 #hero-left .svg {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: black;
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+  }
+
+  #s1 #hero-right {
+    width: 100%;
+    height: auto;
+    padding: 3%;
+  }
+
+  #s1 #hero-right #svgLists {
+    width: 40%;
+    height: auto;
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  #s1 #hero-right .hidden {
+    display: none;
+  }
+
+  /* all sections */
+  .image-container {
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  /* section 9  */
+  #s9 {
+    padding: 0px;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  #s9 ul {
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  #s9 ul li {
+    list-style: url(./assests/svg/core.svg);
+    font-family: 'Lato';
+    color: #52595f;
+    line-height: 2;
+  }
+
+  #s9 .lists #pro li {
+    list-style: url(./assests/svg/pro.svg);
+    font-family: 'Lato';
+    color: #52595f;
+    line-height: 2;
+  }
+
+  #s9 .text-center {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(58, 62, 66);
+    font-size: 2.5rem;
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 500px) {
+  .section {
+    display: block;
+    overflow: hidden;
+  }
+  nav {
+    margin-bottom: 10px;
+  }
+
+  #s1 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #s1 #hero-left #hero-heading {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+    max-width: 100%;
+    color: rgb(58, 62, 66);
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+  }
+
+  #s1 #hero-right #svgLists {
+    width: 300px;
+    height: auto;
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  .Allsection {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  #s2,
+  #s3,
+  #s4,
+  #s5,
+  #s6,
+  #s7,
+  #s8 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #s7 .testimonal-card {
+    width: 100%;
+  }
+
+  #s8 {
+    height: auto;
+  }
+
+  #s8 .download {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #s9 {
+    text-align: center;
+    border: 3px solid slateblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0, 10px;
+    overflow: scroll;
+  }
+
+  #s9 .lists ul:nth-child(1) {
+    display: none;
+  }
+
+  /* all sections */
+  /* .image-container {
+    padding: 10px;
+  }
+
+  .image-container img {
+    max-width: 300px;
+    max-height: 300px;
+  } */
 }

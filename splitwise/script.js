@@ -2,9 +2,9 @@ $('document').ready(()=>{
 
 console.log('body loaded');
 $('#house').click(()=>{
-    console.log('house clicked')
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeOut()
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeIn(1500)
+    // console.log('house clicked')
+    $("#textColorChanger , #s1 #hero-left").fadeOut()
+    $("#textColorChanger , #s1 #hero-left").fadeIn(1500)
     $("#textColorChanger").text('with housemates').css('color' , '#8A5DCE');
     $('#s1 #hero-left #signUpButton').css('background-color' ,  '#8A5DCE');
     $('#lg-plane').addClass('hidden');
@@ -13,9 +13,9 @@ $('#house').click(()=>{
     $("#lg-star").addClass('hidden');
 })
 $('#plane').click(()=>{
-    console.log('plane clicked');
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeOut()
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeIn(1500)
+    // console.log('plane clicked');
+    $("#textColorChanger , #s1 #hero-left").fadeOut()
+    $("#textColorChanger , #s1 #hero-left").fadeIn(1500)
     $("#textColorChanger").text('on trips').css('color' , '#1CC29F');
     $('#s1 #hero-left #signUpButton').css('background-color' ,  '#1CC29F');
     $('#lg-plane').removeClass('hidden');
@@ -24,10 +24,10 @@ $('#plane').click(()=>{
     $("#lg-star").addClass('hidden');
 })
 $('#heart').click(()=>{
-    console.log('heart clicked');
+    // console.log('heart clicked');
 
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeOut()
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeIn(1500)
+    $("#textColorChanger , #s1 #hero-left").fadeOut()
+    $("#textColorChanger , #s1 #hero-left").fadeIn(1500)
     $('#textColorChanger').text('with partner').css('color' , "#A6002F");
     $('#s1 #hero-left #signUpButton').css('background-color' ,  '#A6002F');
     $('#lg-plane').addClass('hidden');
@@ -38,8 +38,8 @@ $('#heart').click(()=>{
 $('#star').click(()=>{
     console.log('star clicked');
 
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeOut()
-    $("#textColorChanger , #s1 #hero-left #signUpButton").fadeIn(1500)
+    $("#textColorChanger , #s1 #hero-left").fadeOut()
+    $("#textColorChanger , #s1 #hero-left").fadeIn(1500)
     $("#textColorChanger").text('with anyone').css('color' ,'#1CC29F');
     $('#s1 #hero-left #signUpButton').css('background-color' ,  '#1CC29F');
     $('#lg-plane').addClass('hidden');
